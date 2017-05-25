@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="MoodTableViewCell" customModule="CoreDataPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8I-UN-UAf">
+                        <rect key="frame" x="220" y="0.0" width="100" height="113.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Zht-w1-WMr"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFc-Gn-yXt">
+                        <rect key="frame" x="0.0" y="46" width="220" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="VY5-mJ-gYn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p8I-UN-UAf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="33E-jf-lzR"/>
+                    <constraint firstAttribute="bottom" secondItem="p8I-UN-UAf" secondAttribute="bottom" id="47R-vk-Jfm"/>
+                    <constraint firstItem="p8I-UN-UAf" firstAttribute="leading" secondItem="AFc-Gn-yXt" secondAttribute="trailing" id="6Aq-c6-85y"/>
+                    <constraint firstItem="AFc-Gn-yXt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AHd-Bx-XcQ"/>
+                    <constraint firstItem="AFc-Gn-yXt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WAs-Ga-a7w"/>
+                    <constraint firstAttribute="trailing" secondItem="p8I-UN-UAf" secondAttribute="trailing" id="nlv-HN-XTu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="AFc-Gn-yXt" id="LNt-gv-S9j"/>
+                <outlet property="moodView" destination="p8I-UN-UAf" id="lTs-jv-8vB"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="87"/>
+        </tableViewCell>
+    </objects>
+</document>
